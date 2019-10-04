@@ -26,10 +26,14 @@ var cards = [
 ];
 
 var cardsInPlay = [];
+var score = 0
 
 function checkForMatch() {
 	if (cardsInPlay[0] === cardsInPlay[1]) {
 		alert("You found a match!");
+		score += 1;
+		document.getElementById("score").innerText = "\nYour score is " + score +"!"; 
+		console.log("Your score is " + score);
 	}
 	else {
 		alert("Sorry, try again.");
@@ -65,4 +69,16 @@ function createBoard() {
 }
 };
 
+function reset() {
+	for (let i = 0; i < 4; i ++) {
+		document.getElementById("game-board").removeChild(document.querySelector('img'));
+	}
+	cardsInPlay = [];
+	createBoard();
+}
+
 createBoard();
+
+
+
+document.querySelector("button").addEventListener('click', reset);

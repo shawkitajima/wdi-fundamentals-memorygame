@@ -65,7 +65,7 @@ img {
 
 footer {
 	text-transform: uppercase;
-	padding: 20px;
+	padding: 26px;
 	background-color: #0D2C40;
 	color: white;
 	font-size: 14px;
@@ -88,11 +88,38 @@ footer {
 	display: block;
 	content: " ";
 	clear: both;
-	height: 0;
+/*	height: 5px;*/
 	font-size: 0;
 }
 
 .name {
 	color: #F15B31;
 	font-weight: 700;
+}
+
+#reset {
+	float: right;
+}
+
+#score {
+	width: 300px;
+	height: 50px;
+	font-size: 14px;
+	font-family: RALEWAY;
+	font-weight: 800;
+	background-color: #C6CCCC;
+}
+
+button {
+	width: 300px;
+	height: 50px;
+	float: left;
+	font-size: 14px;
+	background-color: #C6CCCC;
+	font-family: RALEWAY;
+	font-weight: 800;
+}
+
+#pfont {
+	font-family: RALEWAY;
 }
